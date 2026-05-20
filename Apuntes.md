@@ -144,4 +144,65 @@ El proceso que viviste de intentar ejecutar, encontrar errores y corregir, es el
    * Si se intenta una acción no válida (como pedir producto sin saldo), se marca como error.
  * **Traducción formal:** Al lado de la tabla, se escriben las funciones de transición equivalentes en formato de matriz matemática (ej. matriz[0][0] -> 1), preparando la lógica para su posterior implementación en programación. 
 
+## Clase
+
+### Resumen del Video
+**Programación Orientada a Objetos (P.O.O.) en Java**.
+A lo largo de la clase, el instructor utiliza diapositivas de PowerPoint y el entorno de desarrollo **Visual Studio Code** para explicar de manera práctica y teórica los fundamentos del lenguaje, incluyendo:
+ 1. **Tipos de datos primitivos y de referencia.**
+ 2. **Estructura y sintaxis de variables** (reglas de nomenclatura y buenas prácticas).
+ 3. **Conversión de tipos de datos** (*Casting* y métodos de envoltura).
+ 4. **Operadores aritméticos, lógicos y relacionales.**
+ 5. **Entrada de datos** mediante el uso de la clase Scanner.
+ 6. **Uso de la clase String** y sus métodos principales.
+ 7. **Estructuras de control y datos** (menciones a *Arrays*, *Stacks*, *Queues*, etc.).
+### Ampliación de la Información Más Importante
+A continuación, se profundiza en los pilares conceptuales clave explicados en la sesión:
+#### 1. Tipos de Datos en Java (P.O.O.)
+Java es un lenguaje fuertemente tipado, lo que significa que cada variable debe declararse con un tipo de dato específico. Se dividen en dos grandes grupos:
+ * **Tipos Primitivos:** Son tipos de datos básicos incorporados en el lenguaje que almacenan valores directamente.
+   * **Enteros:** byte (1 byte, de -128 a 127), short (2 bytes), int (4 bytes, el estándar para enteros) y long (8 bytes, para números muy grandes).
+   * **Punto Flotante (Decimales):** float (4 bytes, precisión simple, requiere sufijo 'f') y double (8 bytes, precisión doble, estándar para decimales).
+   * **Caracteres:** char (2 bytes, almacena un único carácter Unicode entre comillas simples, ej. 'A').
+   * **Lógico:** boolean (almacena únicamente true o false).
+ * **Tipos de Referencia (No primitivos):** No almacenan el valor en sí, sino una referencia (dirección de memoria) al objeto. Ejemplos de esto son las clases, las interfaces, los Arrays y la clase String.
+#### 2. Reglas para Nombrar Variables
+El instructor enfatiza las convenciones de nomenclatura (buenas prácticas) para mantener el código limpio y legible:
+ * **Camel Case:** Los nombres de las variables deben comenzar con una letra minúscula y, si contienen múltiples palabras, la primera letra de las palabras siguientes debe ir en mayúscula (ej. int minutosPorHora = 60;).
+ * **Caracteres permitidos:** Pueden contener letras, dígitos, guiones bajos (_) y el signo de dólar ($), pero **nunca** deben comenzar con un número.
+ * **Sensibilidad a mayúsculas:** Java es *case-sensitive* (sensible a mayúsculas y minúsculas); la variable myVar es completamente distinta a myvar.
+ * **Palabras reservadas:** No se pueden utilizar palabras clave del lenguaje (como int, class, public, void) como nombres de variables.
+#### 3. Conversión de Tipos de Datos (Type Casting)
+Ocurre cuando se asigna un valor de un tipo de datos primitivo a otro. Se divide en dos métodos:
+ * **Widening Casting (Automático):** Pasa de un tipo de menor tamaño a uno de mayor tamaño sin pérdida de información (ej. de int a double). Java lo hace por sí solo.
+ * **Narrowing Casting (Manual):** Pasa de un tipo de mayor tamaño a uno más pequeño (ej. de double a int). Requiere colocar el tipo de dato destino entre paréntesis antes del valor debido al riesgo de pérdida de precisión decimal:
+   ```java
+   double myDouble = 9.78;
+   int myInt = (int) myDouble; // myInt valdrá 9
+   
+   ```
+ * **Conversión de Strings a Números:** Para convertir una cadena de texto a un número entero o decimal, se utilizan los métodos de las clases de envoltura (*Wrapper Classes*):
+   * Integer.parseInt("10");
+   * Double.parseDouble("10.5");
+#### 4. Operadores de Java
+Son símbolos utilizados para realizar operaciones sobre variables y valores. Los más importantes expuestos son:
+ * **Operadores Aritméticos:** Adición (+), Sustracción (-), Multiplicación (*), División (/) y Residuo o Módulo (%, que devuelve el resto de una división entera).
+ * **Operadores de Asignación Compuesta:** Simplifican el código aplicando una operación y asignando el resultado inmediatamente (ej. x += 5; es equivalente a x = x + 5;).
+ * **Operadores Lógicos:** Utilizados para determinar la lógica entre variables o valores:
+   * && (**Logical AND**): Devuelve true si ambas condiciones son verdaderas.
+   * || (**Logical OR**): Devuelve true si al menos una de las condiciones es verdadera.
+   * ! (**Logical NOT**): Invierte el resultado (ej. si es true lo vuelve false).
+#### 5. Lectura de Datos con la Clase Scanner
+Para interactuar con el usuario a través de la consola, Java utiliza la clase Scanner (perteneciente al paquete java.util). Se debe instanciar un objeto de la siguiente manera:
+```java
+Scanner scan = new Scanner(System.in);
+
+```
+El objeto permite capturar diferentes tipos de datos según el método invocado:
+ * scan.nextInt(): Salta espacios en blanco y captura el próximo entero.
+ * scan.nextDouble(): Captura el próximo valor decimal.
+ * scan.next(): Captura la siguiente palabra (delimitada por espacios).
+ * scan.nextLine(): Lee una línea completa de texto, incluidos los espacios.
+
+
  
