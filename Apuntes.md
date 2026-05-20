@@ -121,4 +121,27 @@ El proceso que viviste de intentar ejecutar, encontrar errores y corregir, es el
 ​Utilizan una herramienta de diagramación (posiblemente draw.io dentro de VS Code) para visualizar la lógica de sus clases, conexiones entre objetos y el flujo de los métodos.
 ​Se observa una discusión sobre cómo estructurar la lógica entre las clases Controlador, Serie, Figura y CadenaCaracter.
 ​Depuración (Debugging):
-​Hacia el final de la grabación, realizan intentos de ejecución y depuración del código, encontrando errores de compilación que intentan corregir en tiempo real en el Controlador.java al llamar a los métodos. 
+​Hacia el final de la grabación, realizan intentos de ejecución y depuración del código, encontrando errores de compilación que intentan corregir en tiempo real en el Controlador.java al llamar a los métodos.
+
+## Clase
+
+## Modelado y Lógica del Autómata. 
+ * ** Cuál es su objetivo? :** Se diseña y analiza el comportamiento de una máquina expendedora que acepta monedas de 5, 10 y 25 centavos para entregar un producto (chicle por 10 centavos, pan por 25 centavos).
+ * **Estados del sistema (q_0 a q_5):** Representan el dinero acumulado en la máquina:
+   * q_0: 0 centavos.
+   * q_1: 5 centavos.
+   * q_2: 10 centavos (**entrega chicle**).
+   * q_3: 15 centavos.
+   * q_4: 20 centavos.
+   * q_5: 25 centavos (**entrega pan**).
+ * **Pruebas de caminos:** Se evalúan diferentes secuencias de monedas ingresadas para ver si el sistema responde correctamente (por ejemplo, si metes 5, luego 10 y luego 5, el sistema calcula el estado final y determina qué producto o vuelto corresponde).
+## Creación de la Matriz de Transición
+ * **Estructura:** Se construye una tabla en la herramienta de diagramación para representar la lógica del autómata en código o datos estructurados.
+ * **Filas y Columnas:** Las filas representan los estados actuales (q_0, q_1, \dots) y las columnas los estímulos o entradas (monedas de 5, 10, 25, y la acción de presionar Enter/Espacio).
+ * **Llenado de datos:** Se completa celda por celda definiendo a qué estado salta la máquina. Por ejemplo:
+   * Estando en q_0 (0 centavos), si ingresas una moneda de 5, pasas al estado 1 (equivalente a q_1).
+   * Estando en q_1 (5 centavos), si ingresas otra de 5, pasas al estado 2 (q_2).
+   * Si se intenta una acción no válida (como pedir producto sin saldo), se marca como error.
+ * **Traducción formal:** Al lado de la tabla, se escriben las funciones de transición equivalentes en formato de matriz matemática (ej. matriz[0][0] -> 1), preparando la lógica para su posterior implementación en programación. 
+
+ 
