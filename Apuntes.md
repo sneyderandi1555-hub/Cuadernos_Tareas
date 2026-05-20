@@ -82,6 +82,35 @@ git config --global user.email:nos da el correo que esta registrado.
 En la PRO,orientada a objetos se organiza el codigo usando objetos como si fueran objetos de la vida real.
 git reset:borra el archivo de el area staging(area de preparacion)pero sin modificar los cambios que teniamos.
 
+## Clase
+
+# Sesión de Trabajo Grupal: POO en Java
+Este video es una sesión de trabajo grupal sobre conceptos de **Programación Orientada a Objetos (POO)**, centrada específicamente en la distinción entre **propiedades** (atributos) y **métodos** en el contexto de tu proyecto en Java (poliretos_G1).
+## Resumen del Contenido
+El video muestra a los participantes utilizando una herramienta de diagramación para modelar la estructura de sus clases. El objetivo principal es organizar correctamente cómo los datos (propiedades) y las acciones (métodos) se distribuyen entre las clases del proyecto.
+ * **Diferenciación conceptual:** Se dedica tiempo a definir claramente qué es un atributo y qué es un método.
+ * **Modelado:** Se observa la construcción de diagramas que vinculan clases (ej. Controlador, SerieNum, SerieCar) con sus respectivos miembros, asegurando que la lógica de negocio esté bien delegada.
+ * **Encapsulamiento:** Se discute la visibilidad de estos elementos (public, private, protected), un pilar fundamental en Java para proteger la integridad de los datos.
+## Ampliación: Propiedades vs. Métodos en Java
+Para profundizar en lo que se está trabajando en el video, es útil entender la distinción técnica de estos conceptos en Java:
+### 1. Propiedades (Atributos o Campos)
+ * **Qué son:** Representan el **estado** o las características de un objeto. Son las variables que definen qué *es* el objeto.
+ * **Ejemplo:** Si tuvieras una clase Coche, las propiedades serían color, marca, kilometraje.
+ * **Buenas prácticas:** En Java, por estándar, se declaran como private para aplicar el **encapsulamiento**, y se accede a ellas a través de métodos *getters* y *setters*.
+### 2. Métodos
+ * **Qué son:** Representan el **comportamiento** o las acciones que puede realizar un objeto. Son las funciones que definen qué *hace* el objeto.
+ * **Ejemplo:** En la misma clase Coche, los métodos serían acelerar(), frenar(), cambiarMarcha().
+ * **Interacción:** Los métodos suelen manipular los valores de las propiedades para cambiar el estado del objeto.
+## Resumen Comparativo
+| Característica | Propiedad (Atributo) | Método |
+|---|---|---|
+| **Representa** | El "qué tiene" (estado) | El "qué hace" (comportamiento) |
+| **Naturaleza** | Variable | Función / Acción |
+| **Ejemplo** | private int edad; | public void caminar() { ... } |
+> **Nota para tu proyecto:** Dado que estás trabajando en poliretos_G1, asegúrate de que tu clase Controlador actúe como el orquestador que utiliza los métodos de tus otras clases para manipular sus propiedades, manteniendo el Main lo más limpio posible.
+> 
+
+
 ## Clase 
 
  * **Tipos de datos y Variables**: Se analiza la diferencia entre tipos primitivos y tipos por referencia, utilizando ejemplos como int, char, float, String e Integer. Se explican conceptos como la conversión de tipos (cast, implícita/explícita) y cómo se comportan las variables en memoria.
