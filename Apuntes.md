@@ -84,6 +84,15 @@ git reset:borra el archivo de el area staging(area de preparacion)pero sin modif
 
 ## Clase 
 
+ * **Tipos de datos y Variables**: Se analiza la diferencia entre tipos primitivos y tipos por referencia, utilizando ejemplos como int, char, float, String e Integer. Se explican conceptos como la conversión de tipos (cast, implícita/explícita) y cómo se comportan las variables en memoria.
+ * **Fundamentos de Java**: Se muestra material de apoyo sobre cómo funciona Java (compilación a bytecode, JVM, plataforma), diferencias entre programación estructurada y orientada a objetos, y la importancia de la práctica constante.
+ * **Control de flujo y Sintaxis básica**: Se mencionan estructuras condicionales (if, else, switch case) y el uso de System.out.println o Scanner.
+ * **Métodos**: Se explica cómo definir y estructurar métodos, incluyendo el uso de parámetros y valores de retorno, bajo el principio de "No repetirse" (DRY). Se ejemplifica la creación de un método como saltar().
+ * **Estructura de Clases**: Se ilustra la relación entre atributos, métodos y la estructura general de una clase en Java.
+
+
+## Clase 
+
 ### Manipulación de Cadenas y la Eficiencia de Memoria
 
 El hecho de que tu IDE te sugiera usar StringBuilder en lugar de concatenación directa (+) no es un capricho, es una cuestión de **gestión de memoria en el Heap**.
